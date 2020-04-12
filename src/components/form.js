@@ -48,7 +48,8 @@ const Form = () => {
 					<form onSubmit={handleSubmit(sendForm)}>
 					  <div className="form-group">
 						<label htmlFor="title">Title</label>
-						<input type="text" className="form-control" id="title" placeholder="title"
+						<input type="text" className={`form-control ${errors.title ? 'is-invalid' : ''}`} id="title"
+							   placeholder="title"
 							   name="title"
 							   ref={register({
 								 required: "The title field is required."
@@ -59,7 +60,9 @@ const Form = () => {
 					  </div>
 					  <div className="form-group">
 						<label htmlFor="publication">Publication</label>
-						<textarea className="form-control" id="publication" rows="3" placeholder="Write something..."
+						<textarea className={`form-control ${errors.title ? 'is-invalid' : ''}`} id="publication"
+								  rows="5"
+								  placeholder="Write something..."
 								  name="body"
 								  ref={register({
 									required: "The body of the publication is required."
