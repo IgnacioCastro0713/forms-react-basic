@@ -59,7 +59,7 @@ const Form = () => {
 					  </div>
 					  <div className="form-group">
 						<label htmlFor="publication">Publication</label>
-						<textarea className={`form-control ${errors.title ? 'is-invalid' : ''}`} id="publication"
+						<textarea className={`form-control ${errors.body ? 'is-invalid' : ''}`} id="publication"
 								  rows="5"
 								  placeholder="Write something..."
 								  name="body"
