@@ -1,7 +1,6 @@
 import React, {useState} from "react";
 import {useForm} from 'react-hook-form'
 
-
 const Form = () => {
   const {handleSubmit, register, errors} = useForm();
   let [alert, setAlert] = useState("");
@@ -31,10 +30,10 @@ const Form = () => {
   };
 
   return (
-	  <div className="container py-5">
+	  <div className="container py-3">
 		<div className="row">
 		  <div className="col-md-12">
-			<h2 className="text-center text-dark mb-4">React Form</h2>
+			<h2 className="text-center text-white mb-4">React Form</h2>
 			{alert && <div className="alert alert-success" role="alert">
 			  {alert}
 			</div>}

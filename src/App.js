@@ -2,10 +2,16 @@ import React from 'react';
 import './App.css';
 
 import {Form} from './components/index'
+import logo from "./logo.svg";
 
 function App() {
   return (
-      <Form/>
+	  <div className="Main">
+		<div className="Center-icon">
+		  <img src={logo} className="App-logo" alt="logo"/>
+		</div>
+		<Form/>
+	  </div>
   );
 }
 
