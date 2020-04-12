@@ -20,7 +20,7 @@ const Form = () => {
 		"Content-type": "application/json; charset=UTF-8"
 	  }
 	}).then(response => {
-	  if (response.ok !== true) {
+	  if (!response.ok) {
 		return;
 	  }
 	  setAlert('Post successfully added');
